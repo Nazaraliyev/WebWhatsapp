@@ -30,7 +30,7 @@ ul, div, p, h6 {
 #MyContainer {
   width: 1300px;
   height: 95vh;
-  background-color: red;
+  background-color: #131c21;
   margin: 0;
   padding: 0;
 }
@@ -68,7 +68,7 @@ ul, div, p, h6 {
 }
 
 #menu {
-  border-right: 1px solid rgba(255, 255, 255, 0.288);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
   background-color: #2a2f32;
 }
 
@@ -85,21 +85,63 @@ ul, div, p, h6 {
   color: #b1b3b5;
 }
 
-#menu #search-block {
+#menu #search-section {
   padding: 10px 20px;
   background-color: #131c21;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.288);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#menu #search-block input {
+#menu #search-section #search-wrapper {
   height: 30px;
+  width: 100%;
+  position: relative;
+}
+
+#menu #search-section #search-wrapper input {
+  width: 100%;
+  height: 100%;
   border: none;
   background-color: #2a2f32;
   width: 100%;
   border-radius: 20px;
-  padding-left: 50px;
+  padding-left: 55px;
   font-size: 14px;
   outline: none;
+  color: #b1b3b5;
+}
+
+#menu #search-section #search-wrapper ::-webkit-input-placeholder {
+  color: #b1b3b5;
+  font-weight: 500;
+  opacity: 1;
+}
+
+#menu #search-section #search-wrapper :-ms-input-placeholder {
+  color: #b1b3b5;
+  font-weight: 500;
+  opacity: 1;
+}
+
+#menu #search-section #search-wrapper ::-ms-input-placeholder {
+  color: #b1b3b5;
+  font-weight: 500;
+  opacity: 1;
+}
+
+#menu #search-section #search-wrapper ::placeholder {
+  color: #b1b3b5;
+  font-weight: 500;
+  opacity: 1;
+}
+
+#menu #search-section #search-wrapper i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #b1b3b5;
+  font-weight: 500;
 }
 
 #menu #chat-list {
@@ -107,7 +149,6 @@ ul, div, p, h6 {
   margin: 0;
   background-color: #131c21;
   overflow: auto;
-  height: 700px;
 }
 
 #menu #chat-list li {
@@ -115,7 +156,9 @@ ul, div, p, h6 {
 }
 
 #menu #chat-list li .list-message {
-  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding-left: 20px;
   position: relative;
 }
@@ -123,16 +166,11 @@ ul, div, p, h6 {
 #menu #chat-list li .list-message::after {
   content: "";
   display: block;
-  background-color: rgba(255, 255, 255, 0.288);
+  background-color: rgba(255, 255, 255, 0.1);
   height: 1px;
-  width: 100%;
+  width: 98%;
   position: absolute;
   bottom: -10px;
-}
-
-#menu #chat-list li .list-message .message-head,
-#menu #chat-list li .list-message .message-content {
-  width: 100%;
 }
 
 #menu #chat-list li .list-message .message-head h6 {
@@ -162,7 +200,7 @@ ul, div, p, h6 {
   height: 20px;
   border-radius: 10px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.288);
+  background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
 

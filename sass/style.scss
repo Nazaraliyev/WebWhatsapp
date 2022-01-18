@@ -2,7 +2,7 @@ $primary-color: #2a2f32;
 $secondary-color: #131c21;
 $chat-color: #131c21;
 $text-color: #b1b3b5;
-$line-color: rgba(255, 255, 255, 0.288);
+$line-color: rgba(255, 255, 255, 0.1);
 
 * {
   margin: 0;
@@ -29,7 +29,7 @@ ul, div, p, h6{
 #MyContainer {
   width: 1300px;
   height: 95vh;
-  background-color: red;
+  background-color: $secondary-color;
   margin: 0;
   padding: 0;
 }
