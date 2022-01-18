@@ -1,9 +1,65 @@
-#chat{
-    #profile-info{
-        padding-left: 15px;
-        color: #fff;
-        p{
-            font-size: 12px;
-        }
+#chat {
+  position: relative;
+  #profile-info {
+    padding-left: 15px;
+    color: #fff;
+    p {
+      font-size: 12px;
     }
+  }
+
+  #chat-profile-menu {
+    align-items: center;
+    li {
+      padding: 0 20px;
+      i {
+        color: $text-color;
+        font-weight: 500;
+      }
+    }
+  }
+
+  #message-input-wrapper {
+    background-color: $chat-input-background;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    align-items: center;
+
+    a{
+        color: transparent;
+    }
+
+    i {
+      font-size: 20px;
+      color: $text-color;
+      font-weight: 300;
+      padding: 0 10px;
+    }
+
+    textarea {
+      padding: 10px;
+      height: 45px;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      background-color: $primary-color;
+      padding-left: 20px;
+      color: #fff;
+      flex-grow: 1;
+      resize: none;
+    }
+
+    #send-message-btn {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      i {
+        font-weight: 700;
+        padding: 0 20px;
+      }
+    }
+  }
 }
