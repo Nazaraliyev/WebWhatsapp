@@ -416,10 +416,11 @@ ul, div, p, h6 {
   border-radius: 5px;
   border: none;
   background-color: #a3d304;
-  color: #fff;
+  color: #131c21;
   font-size: 14px;
   -webkit-transition: 200ms;
   transition: 200ms;
+  font-weight: 500;
 }
 
 #login-content #sing-in-btn:hover {
