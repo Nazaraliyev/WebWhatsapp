@@ -21,6 +21,7 @@
 
   #chat-messages {
     position: relative;
+    background-color: $chat-background;
     &::before {
       content: "";
       display: block;
@@ -34,19 +35,33 @@
       z-index: 0;
     }
     #chat-messages-container {
-      padding: 0 75px;
+      padding: 10px 75px;
       overflow: auto;
+
+      .chat-time{
+          display: flex;
+          justify-content: center;
+          margin: 10px 0;
+          span{
+            padding: 5px 10px;
+            color: #fff;
+            border-radius: 5px;
+            background-color: $time-color;
+            opacity: 1;
+          }
+      }
 
       .msg {
         padding: 5px 10px;
         border-radius: 10px;
         position: relative;
-        margin: 2px 0;
+        margin: 5px 0;
         span {
           position: absolute;
         }
         p {
           color: rgb(255, 255, 255);
+          max-width: 500px;
         }
         color: #fff;
       }
@@ -66,7 +81,7 @@
 
       .receiver {
         align-self: start;
-        background-color: $sender-color;
+        background-color: $receiver;
         border-top-left-radius: 0;
         padding-right: 80px;
         span {

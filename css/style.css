@@ -236,6 +236,7 @@ ul, div, p, h6 {
 
 #chat #chat-messages {
   position: relative;
+  background-color: #0D1418;
 }
 
 #chat #chat-messages::before {
@@ -252,15 +253,33 @@ ul, div, p, h6 {
 }
 
 #chat #chat-messages #chat-messages-container {
-  padding: 0 75px;
+  padding: 10px 75px;
   overflow: auto;
+}
+
+#chat #chat-messages #chat-messages-container .chat-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0;
+}
+
+#chat #chat-messages #chat-messages-container .chat-time span {
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #1E2A30;
+  opacity: 1;
 }
 
 #chat #chat-messages #chat-messages-container .msg {
   padding: 5px 10px;
   border-radius: 10px;
   position: relative;
-  margin: 2px 0;
+  margin: 5px 0;
   color: #fff;
 }
 
@@ -270,6 +289,7 @@ ul, div, p, h6 {
 
 #chat #chat-messages #chat-messages-container .msg p {
   color: white;
+  max-width: 500px;
 }
 
 #chat #chat-messages #chat-messages-container .sender {
@@ -292,7 +312,7 @@ ul, div, p, h6 {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
-  background-color: #056062;
+  background-color: #262D31;
   border-top-left-radius: 0;
   padding-right: 80px;
 }
