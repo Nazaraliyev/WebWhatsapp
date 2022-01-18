@@ -66,6 +66,12 @@ ul, div, p, h6 {
   border-radius: 20px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 #menu {
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   background-color: #2a2f32;

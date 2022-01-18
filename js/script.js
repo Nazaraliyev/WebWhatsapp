@@ -33,10 +33,6 @@ $(document).ready(() => {
       }
     })
   }
-
-
-
-
 });
 
 const Adjust = () => {
