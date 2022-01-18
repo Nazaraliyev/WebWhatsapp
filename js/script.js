@@ -3,6 +3,40 @@ $(document).ready(() => {
   $(window).on("resize", () => {
     Adjust();
   });
+
+  var inputs = document.getElementsByClassName("my-form-input");
+  var labels = document.getElementsByClassName("my-form-label");
+  for(let i =0; i<=inputs.length; i++){
+    $(inputs[i]).focus(()=>{
+      for(let j = 0; j <= labels.length; j++){
+        if(inputs[i].dataset.index == labels[j].dataset.index){
+          $(labels[j]).css({
+            "bottom" : "35px",
+            "font-size" : "12px"
+          })
+        }
+      }
+    })
+  }
+
+  for(let i =0; i<=inputs.length; i++){
+    $(inputs[i]).blur(()=>{
+      for(let j = 0; j <= labels.length; j++){
+        if(inputs[i].dataset.index == labels[j].dataset.index){
+          if(inputs[i].value == ""){
+            $(labels[j]).css({
+              "bottom" : "5px",
+              "font-size" : "14px"
+            })
+          }
+        }
+      }
+    })
+  }
+
+
+
+
 });
 
 const Adjust = () => {

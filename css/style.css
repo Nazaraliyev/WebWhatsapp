@@ -27,7 +27,7 @@ ul, div, p, h6 {
   margin: 0;
 }
 
-#MyContainer {
+#my-container {
   width: 1300px;
   height: 95vh;
   background-color: #131c21;
@@ -60,7 +60,6 @@ ul, div, p, h6 {
   width: 5px;
 }
 
-/* Track */
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #b1b3b5;
@@ -371,5 +370,59 @@ ul, div, p, h6 {
 #chat #message-input-wrapper #send-message-btn i {
   font-weight: 700;
   padding: 0 20px;
+}
+
+#login-content img {
+  width: 20%;
+}
+
+#login-content h1 {
+  color: #a3d304;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#login-content h3 {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+#login-content .my-form {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#login-content .my-form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  color: #b1b3b5;
+  padding-bottom: 5px;
+}
+
+#login-content .my-form label {
+  color: #fff;
+  position: absolute;
+  bottom: 5px;
+  font-size: 14px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+#login-content #sing-in-btn {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #a3d304;
+  color: #fff;
+  font-size: 14px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+#login-content #sing-in-btn:hover {
+  background-color: #86ad06;
 }
 /*# sourceMappingURL=style.css.map */
