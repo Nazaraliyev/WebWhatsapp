@@ -36,8 +36,8 @@
     }
     #chat-messages-container {
       padding: 10px 75px;
-      overflow: auto;
-
+      overflow-y: auto;
+      overflow-x: hidden;
       .chat-time{
           display: flex;
           justify-content: center;

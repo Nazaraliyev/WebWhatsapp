@@ -259,7 +259,8 @@ input::-webkit-inner-spin-button {
 
 #chat #chat-messages #chat-messages-container {
   padding: 10px 75px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #chat #chat-messages #chat-messages-container .chat-time {
@@ -431,5 +432,9 @@ input::-webkit-inner-spin-button {
 
 #login-content #sing-in-btn:hover {
   background-color: #86ad06;
+}
+
+#login-content #create-account {
+  color: #5c7704;
 }
 /*# sourceMappingURL=style.css.map */
