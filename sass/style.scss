@@ -1,7 +1,79 @@
-*{
+$primary-color: #2a2f32;
+$secondary-color: #131c21;
+$chat-color: #131c21;
+$text-color: #b1b3b5;
+$line-color: rgba(255, 255, 255, 0.288);
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #090e11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul, div, p, h6{
     padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
 }
+
+#MyContainer {
+  width: 1300px;
+  height: 95vh;
+  background-color: red;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    img {
+      width: 90%;
+      height: 90%;
+      border-radius: 50%;
+    }
+  }
+
+.col-4,
+.col-8 {
+  padding: 0;
+}
+
+.chat-header {
+  background-color: $primary-color;
+  padding: 10px 20px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+// ::-webkit-scrollbar-track {
+//   box-shadow: inset 0 0 5px grey; 
+//   border-radius: 10px;
+// }
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $text-color; 
+  border-radius: 20px;
+}
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #b30000; 
+// }
+
+@import "menu";
+@import "chat";
