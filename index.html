@@ -356,7 +356,10 @@
       </div>
       <div class="col-8" id="chat">
         <div class="chat-header">
-          <div id="chat-header" class="d-flex justify-content-between">
+          <div
+            id="chat-profile-info-wrapper"
+            class="d-flex justify-content-between"
+          >
             <div class="d-flex">
               <div class="profile-img">
                 <img src="/img/profile.png" alt="" />
@@ -366,26 +369,47 @@
                 <p>Status</p>
               </div>
             </div>
-            <ul id="chat-profile-menu" class="d-flex ">
-              <li><a href="#"><i class="fas fa-search"></i></a></li>
-              <li><a href="#"><i class="fas fa-ellipsis-v"></i></a></li>
+            <ul id="chat-profile-menu" class="d-flex">
+              <li>
+                <a href="#"><i class="fas fa-search"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+              </li>
             </ul>
           </div>
-          <div id="chat-mesages">
-
+        </div>
+        <div id="chat-messages">
+          <div id="chat-messages-container" class="d-flex flex-column">
+            <ul class="receiver msg">
+              <li>
+                <p>Salam</p>
+                <span>12:00</span>
+              </li>
+            </ul>
+            <ul class="sender msg">
+              <p>Salam</p>
+              <span>12:00</span>
+            </ul>
           </div>
-          <div id="message-input-wrapper" class="d-flex">
-              <div id="input-media">
-                  <a href="#">
-                    <i class="far fa-grin-alt"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fas fa-paperclip"></i>
-                  </a>
-              </div>
-              <textarea type="text" placeholder="Type a message" id="message-input"></textarea>
-              <button id="send-message-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+        <div id="message-input-wrapper" class="d-flex">
+          <div id="input-media">
+            <a href="#">
+              <i class="far fa-grin-alt"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-paperclip"></i>
+            </a>
           </div>
+          <textarea
+            type="text"
+            placeholder="Type a message"
+            id="message-input"
+          ></textarea>
+          <button id="send-message-btn">
+            <i class="fas fa-paper-plane"></i>
+          </button>
         </div>
       </div>
     </div>
